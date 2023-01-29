@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  dockerdjango01:
+    image: dockerdjango01
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
